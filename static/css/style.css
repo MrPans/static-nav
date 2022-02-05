@@ -275,7 +275,7 @@ textarea {
 }
 
 .jj-list-con li:hover {
-    animation: swing 2s linear 0s 1 forwards
+    /* background: hsl(var(--hue), 100%, 31%); */
 }
 @keyframes swing {
     0%, 100% {
@@ -322,6 +322,15 @@ textarea {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        filter: invert(1) hue-rotate(180deg);
+    }
+    /* html img{
+        filter: invert(1) hue-rotate(180deg);
+    }  */
 }
 
 /*-----------------------------简洁版样式定义- 结束---------------------------------------------------*/
